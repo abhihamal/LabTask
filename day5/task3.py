@@ -1,0 +1,16 @@
+from tkinter import*
+root=Tk()
+root.title("Log in page")
+def submit():
+    print("Successfully Logged In!")
+myLabel=Label(root,text="Log In",font=('bold',20))
+myLabel.place(x=200,y=50)
+root.geometry("500x300")
+name=Label(root, text="Username or Email").place (x=80,y=130)
+entry_1=Entry(root)
+entry_1.place(width=180,x=240,y=130)
+email= Label(root,text="Password").place(x=80,y=180)
+entry_2 = Entry(root)
+entry_2.place(width=180,x=240,y=180)
+Button(root,text="Login",width=20,bg="blue",fg="white",command=submit()).place(x=170,y=230)
+root.mainloop()

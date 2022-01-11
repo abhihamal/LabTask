@@ -3,6 +3,6 @@ a=int(input("Number of class attended"))
 p=a/h*100
 print(f"Percentage of class attended is {p}%.")
 if p>=75:
-    print("Student is allowed to sit in exam .")
-else:
-    print("Student is not allowed to sit in exam")
+    print("Student is allowed to attend the examination .")
+elif p<=75:
+    print("Student is not allowed to attend the examination")

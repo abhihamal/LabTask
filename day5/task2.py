@@ -1,0 +1,17 @@
+from tkinter import*
+root=Tk()
+root.geometry("300x300")
+root.title("Registration Form")
+def submit():
+    print("Registration successfully done!")
+label_1=Label(root,text="Registration Form",font='times 15 bold').grid(row=0,column=3)
+name= Label(root,text="Name").grid(row =1, column=2)
+e1= Entry(root).grid(row=1,column=3)
+email= Label(root, text ="Email").grid(row=2, column=2)
+e2= Entry(root).grid(row=2,column=3)
+password=Label(root,text="Password").grid(row=3,column=2)
+e3=Entry(root).grid(row=3,column=3)
+password_2=Label(root,text="Confirm Password").grid(row=4,column=2)
+e4=Entry(root).grid(row=4,column=3)
+sub=Button(root,text="Submit",command=submit()).grid(row=5,column=3)
+root.mainloop() 
